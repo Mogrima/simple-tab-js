@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Простые табы на js</title>
+</head>
+<body>
+    <main class="tab">
+        <div class="tab__toggles">
+            <button class="tab__toggle">Общая информация</button>
+            <button class="tab__toggle">Закладки</button>
+            <button class="tab__toggle">Любимое</button>
+            <button class="tab__toggle">Настройки</button>
+        </div>
+        <section class="tab__content fade">
+            <div class="tab__container">
+                <div class="tab__column-left">
+                    <h2 class="tab__subtitle">Общая информация</h2>
+                    <p class="tab__description">Таким образом, высокотехнологичная концепция
+                        общественного уклада не оставляет шанса для позиций, занимаемых участниками
+                        в отношении поставленных задач. Но сторонники тоталитаризма в науке призваны
+                        к ответу. Разнообразный и богатый опыт говорит нам, что сплоченность команды
+                        профессионалов предполагает независимые способы реализации системы обучения
+                        кадров, соответствующей насущным потребностям. Лишь акционеры крупнейших компаний,
+                        инициированные исключительно синтетически, ограничены исключительно образом
+                        мышления. Задача организации, в особенности же разбавленное изрядной долей
+                        эмпатии, рациональное мышление требует от нас анализа экспериментов,
+                        поражающих по своей масштабности и грандиозности.
+                    </p>
+                    <a class="tab__btn" href="#">
+                        Узнать подробнее
+                    </a>
+                </div>
+                <div class="tab__column-right">
+                    <img class="tab__content-img" src="img/1.jpg" alt="Massage">
+                </div>
+            </div>
+        </section>
+        <section class="tab__content fade">
+            <div class="tab__container">
+                <div class="tab__column-left">
+                    <h2 class="tab__subtitle">Закладки</h2>
+                    <p class="tab__description">Здесь будут отображаться оставленные вами закладки в произведениях.</p>
+                </div>
+                <div class="tab__column-right">
+                    <img class="tab__content-img" src="img/2.jpg" alt="sunset">
+                </div>
+            </div>
+        </section>
+        <section class="tab__content fade">
+            <div class="tab__container">
+                <div class="tab__column-left">
+                    <h2 class="tab__subtitle">Любимое</h2>
+                    <p class="tab__description">Здесь будут отображаться отмеченные вами произведения или рисунки.</p>
+                </div>
+                <div class="tab__column-right">
+                    <img class="tab__content-img" src="img/3.jpg" alt="sunrise">
+                </div>
+            </div>
+        </section>
+        <section class="tab__content fade">
+            <div class="tab__container tab__container--single">
+                <h2 class="tab__subtitle">Настройки</h2>
+                <p class="tab__description">
+                    Здесь вы можете изменить настройки
+                </p>
+                <form class="form" action="#" method="post">
+                    <p class="form__wrapper">
+                        <label class="form__sign" for="login">Ваш логин:</label>
+                        <input class="form__input" id="login" type="text">
+                    </p>
+                    <p class="form__wrapper">
+                        <label class="form__sign" for="email">Ваша электронная почта:</label>
+                        <input class="form__input" id="email" type="email">
+                    </p>
+                    <p class="form__wrapper">
+                        <label class="form__sign" for="date">Дата рождения: </label>
+                        <input class="form__input" type="date" id="date" name="date">
+                    </p>
+                    <p class="form__wrapper form__sign">
+                        Ваш пол:
+                        <input type="radio" id="anonim" name="sex" value="undfind" checked>
+                        <label class="form__sign" for="anonim">Не указан</label>
+                        <input type="radio" id="woman" name="sex" value="woman">
+                        <label class="form__sign" for="woman">Женский</label>
+                        <input type="radio" id="men" name="sex" value="men">
+                        <label class="form__sign" for="men">Мужской</label>
+                    </p>
+                    <p class="form__wrapper">
+                        <label class="form__sign" for="self">Расскажите о себе:</label><br>
+                        <textarea class="form__input form__textarea" name="self" id="self" cols="30" rows="10"></textarea>
+                    </p>
+                        <button class="tab__btn" type="submit">Сохранить</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
